@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ryan's Vlog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 0px;
+  text-align: center;
+  /* background: #1abc9c; */
+  color: white;
+  /*background-image: url(imgs/FtEQIiCWcAA_37k.jpg);*/
+  background-position: center;
+  height: 400px;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  /*padding: 0px;*/
+  /*text-align: center;*/
+  /*background: #ddd;*/
+}
+.carousel-container {
+  /*position: relative;*/
+  /*max-width: 800px;*/
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: none;
+  width: 100%;
+  margin: 0px;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 450px;
+  background-position: center;
+  margin: 0px;
+}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+/**/
+.footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .social-icons {
+      font-size: 24px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: #ffd700; /* Change color on hover, you can customize this */
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <!--<h1>Dreams</h1>
+  <p>ALL <b>hopes</b> start from here.</p>-->
+  <div class="carousel-slide">
+    <img src="imgs/FtEQIiCWcAA_37k.jpg" alt="Slide 1">
+  </div>
+  <div class="carousel-slide">
+    <img src="imgs/az-douglas-college-coquitlam-campus-3.jpg" alt="Slide 2">
+  </div>
+  <div class="carousel-slide">
+    <img src="imgs/Winter 2023 Campus Tour home page slider image.jpg" alt="Slide 3">
+  </div>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="#">About Me</a>
+  <a href="#">My Projects</a>
+  <a href="#" class="right">Feedback</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>This is my...</h5>
+    <div class="fakeimg" style="height:200px;background-image: url(imgs/_124800859_gettyimages-817514614.jpg);background-position: center;"></div>
+    <p>My eyes are filled with anticipation for knowledge...</p>
+    <h3>Do you want to know me deeper?</h3>
+    <div class="fakeimg" style="height:60px;"><a>My experienced</a></div><br>
+    <div class="fakeimg" style="height:60px;">My certifications</div><br>
+    <div class="fakeimg" style="height:60px;">My Projects</div>
+  </div>
+  <div class="main">
+    <h2>Skills</h2>
+    <h5>What has a programmer gone through, what is currently going through, and what else needs to be experienced</h5>
+    <div class="fakeimg" style="height:200px;background-image: url(imgs/Programming_Wordle.jpg);"></div>
+    <p>SQL Server,Mysql,Oracle,SQLite,Python,Golang,C#,Java,Linux,Vue,Js...</p>
+    <br>
+    <h2>Licenses & certifications</h2>
+    <h5>Sometimes you need the certificates to prove you have some abilities to qualify for some jobs.</h5>
+    <div class="fakeimg" style="height:200px;background-image: url(imgs/240_F_447176828_7Leejwia38M4u7OA3EdTGjwWapEwTHx0.jpg);background-position: center;"></div>
+    <p>Play It Safe: Manage Security Risks</p>
+    <p>Build a Full Website using WordPress</p>
+    <p>Programming with Google Go</p>
+    <p>Foundations: Data, Data, Everywhere</p>
+    <p>Python for Everybody Specialization</p>
+    <p>University Pathway Program</p>
+  </div>
+</div>
+
+<div class="footer">
+  <!--<h2 style="float: right;">Ryan Wong</h2>>-->
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/ryan-wong-917649272/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100088664652478" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com/Iptabless" target="_blank"><i class="fab fa-twitter"></i></a>
+    <!-- Add more social media links as needed -->
+  </div>
+</div>
+<script>
+  let slideIndex = 0;
+
+  function showSlides() {
+    let i;
+    const slides = document.querySelectorAll('.carousel-slide');
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = 'block';
+    setTimeout(showSlides, 5000); // Change slide every 2 seconds
+  }
+
+  showSlides();
+</script>
+</body>
+</html>
